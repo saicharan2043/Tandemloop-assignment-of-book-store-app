@@ -1,21 +1,27 @@
 .list-container {
   width: 270px;
-  height: 450px;
+  height: 500px;
   border-radius: 10px;
-  margin: 0px 10px 90px 10px;
+  margin: 0px 10px 50px 10px;
   position: relative;
   list-style: none;
   background-color: red;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
-.img-od-list {
+.img-of-list {
   width: 100%;
   height: 280px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   margin-bottom: 0px;
+  transition: transform 0.4s ease;
+}
+
+.list-container:hover .img-of-list {
+  transform: scale(1.1);
 }
 
 .label-container {
@@ -127,6 +133,11 @@
   background-color: #4d8f72;
   border-radius: 10px;
   cursor: pointer;
+  transition: transform 0.4s ease;
+}
+
+.add-cart-btn:hover {
+  background-color: #191d26;
 }
 
 .cart-iocon-btn {
@@ -144,7 +155,7 @@
 }
 
 .container-of-increase-decrease-delete-container {
-  width: 150px;
+  width: 120px;
   height: 40px;
   display: flex;
   align-items: center;
@@ -153,13 +164,36 @@
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 15px;
   color: #ffffff;
-  background-color: #4d8f72;
+  background-color: #191d26;
   border-radius: 10px;
-  padding: 10px;
+  padding: 5px;
 }
 
 .icons-of-delete-pluse {
   width: 20px;
   height: 20px;
   color: #ffffff;
+  cursor: pointer;
+}
+
+.dark-mode-color {
+  color: #ffffff;
+}
+
+.bg-color-og-dark-mode-home {
+  background-color: #141313;
+  color: #ffffff;
+}
+
+.white-bg {
+  background-color: #e1e3e6;
+  color: #000000;
+}
+
+.black-color {
+  color: #141313;
+}
+
+.bg-black {
+  background-color: #000000;
 }

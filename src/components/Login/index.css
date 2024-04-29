@@ -1,0 +1,53 @@
+.form-container-login {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.error-message {
+  align-self: start;
+  font-size: 15px;
+  margin-top: 3px;
+  margin-bottom: 0px;
+  font-family: "Roboto";
+  font-size: 12px;
+  line-height: 16px;
+  color: #ff0b37;
+}
+
+.lable {
+  font-family: Monospace;
+  font-size: 15px;
+  color: black;
+  margin-bottom: 15px;
+}
+
+.input {
+  width: 400px;
+  height: 45px;
+  margin-bottom: 30px;
+  border-width: 0px;
+  font-family: Sans-serif;
+  font-size: 12px;
+  color: gray;
+  padding: 10px;
+  padding-left: 15px;
+  outline: none;
+}
+
+.btn-login {
+  width: 400px;
+  height: 45px;
+  margin-top: 10px;
+  border-width: 0px;
+  font-family: Sans-serif;
+  font-size: 17px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #089949;
+  margin-bottom: 0px;
+  cursor: pointer;
+}

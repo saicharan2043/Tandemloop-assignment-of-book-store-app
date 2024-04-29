@@ -57,6 +57,7 @@
   height: 30px;
   color: #272c30;
   margin: 0px 15px;
+  cursor: pointer;
 }
 
 .container-of-cart {
@@ -88,4 +89,23 @@
   border-width: 0px;
   border-radius: 10px;
   margin-left: 20px;
+  cursor: pointer;
+}
+
+.dark-mode-color {
+  color: #ffffff;
+}
+
+.bg-color-og-dark-mode {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.white-bg {
+  background-color: #e1e3e6;
+  color: #000000;
+}
+
+.black-color {
+  color: #141313;
 }

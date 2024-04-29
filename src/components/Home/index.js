@@ -2,6 +2,7 @@ import { useState } from "react";
 import BookCard from "../BookCard";
 import NavBar from "../Navbar";
 import "./index.css";
+import BookContext from "../context";
 
 let books = [
   {
@@ -120,70 +121,117 @@ const Home = () => {
   };
 
   return (
-    <div className="background-container">
-      <NavBar changeSearchText={changeSearchText} />
-      <div className="banner-conatiner">
-        <div className="heading-container">
-          <p className="label-of-banner">LET'S MAKE THE BEST INVESTMENT</p>
-          <h1 className="heading-of-banner">
-            There Is No Friend As Loyal As A Book
-          </h1>
-          <p className="description-of-banner">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad harum
-            quibusdam, assumenda quia explicabo.
-          </p>
-          <button className="shop-now-btn">Shop now</button>
-        </div>
-        <img
-          src="https://bookshelf-snowy.vercel.app/assets/images/hero2.png"
-          alt=""
-          className="img-of-banner"
-        />
-      </div>
+    <BookContext.Consumer>
+      {(value) => {
+        const { isDrakModeTrue } = value;
+        return (
+          <div
+            className={`background-container ${
+              isDrakModeTrue && "bg-color-og-dark-mode-home"
+            }`}
+          >
+            <NavBar changeSearchText={changeSearchText} />
+            <div className="banner-conatiner">
+              <div className="heading-container">
+                <p className="label-of-banner">
+                  LET'S MAKE THE BEST INVESTMENT
+                </p>
+                <h1
+                  className={`heading-of-banner ${
+                    isDrakModeTrue && "dark-mode-color"
+                  }`}
+                >
+                  There Is No Friend As Loyal As A Book
+                </h1>
+                <p
+                  className={`description-of-banner ${
+                    isDrakModeTrue && "dark-mode-color"
+                  }`}
+                >
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad
+                  harum quibusdam, assumenda quia explicabo.
+                </p>
+                <button className="shop-now-btn">Shop now</button>
+              </div>
+              <img
+                src="https://bookshelf-snowy.vercel.app/assets/images/hero2.png"
+                alt=""
+                className="img-of-banner"
+              />
+            </div>
 
-      <div className="discount-container">
-        <div className="card-of-discount">
-          <img
-            src="https://bookshelf-snowy.vercel.app/assets/images/book1.jpg"
-            className="img-of-discount"
-          />
-          <div className="text-container-of-discount">
-            <p className="text-of-discount">SALE UP TO 15%</p>
-            <p className="heading-of-discount">
-              Innovation in Education (Hardcover)
-            </p>
-            <p className="discription-of-discount">
-              Starting at: <span className="text-of-discount">$69.09</span>
-            </p>
+            <div
+              className={`discount-container ${isDrakModeTrue && "bg-black"}`}
+            >
+              <div className="card-of-discount">
+                <img
+                  src="https://bookshelf-snowy.vercel.app/assets/images/book1.jpg"
+                  className="img-of-discount"
+                />
+                <div className="text-container-of-discount">
+                  <p className="text-of-discount">SALE UP TO 15%</p>
+                  <p
+                    className={`heading-of-discount ${
+                      isDrakModeTrue && "dark-mode-color"
+                    }`}
+                  >
+                    Innovation in Education (Hardcover)
+                  </p>
+                  <p
+                    className={`discription-of-discount ${
+                      isDrakModeTrue && "dark-mode-color"
+                    }`}
+                  >
+                    Starting at:{" "}
+                    <span className="text-of-discount">$69.09</span>
+                  </p>
+                </div>
+              </div>
+
+              <div className="card-of-discount">
+                <img
+                  src="https://bookshelf-snowy.vercel.app/assets/images/book2.jpg"
+                  className="img-of-discount"
+                />
+                <div className="text-container-of-discount">
+                  <p className="text-of-discount">SALE UP TO 10%</p>
+                  <p
+                    className={`heading-of-discount ${
+                      isDrakModeTrue && "dark-mode-color"
+                    }`}
+                  >
+                    Innovation in Education (Hardcover)
+                  </p>
+                  <p
+                    className={`discription-of-discount ${
+                      isDrakModeTrue && "dark-mode-color"
+                    }`}
+                  >
+                    Starting at:{" "}
+                    <span className="text-of-discount">$50.09</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <p className="books-gallery-text">BOOKS GALLERY</p>
+            <h1
+              className={`popular-books-text ${
+                isDrakModeTrue && "dark-mode-color"
+              }`}
+            >
+              Popular Books
+            </h1>
+
+            <ul className="books-ul-list">
+              {filterBooks.map((eachValue) => (
+                <BookCard booksDetails={eachValue} key={eachValue.id} />
+              ))}
+            </ul>
           </div>
-        </div>
-
-        <div className="card-of-discount">
-          <img
-            src="https://bookshelf-snowy.vercel.app/assets/images/book2.jpg"
-            className="img-of-discount"
-          />
-          <div className="text-container-of-discount">
-            <p className="text-of-discount">SALE UP TO 10%</p>
-            <p className="heading-of-discount">
-              Innovation in Education (Hardcover)
-            </p>
-            <p className="discription-of-discount">
-              Starting at: <span className="text-of-discount">$50.09</span>
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <p className="books-gallery-text">BOOKS GALLERY</p>
-      <h1 className="popular-books-text">Popular Books</h1>
-
-      <ul className="books-ul-list">
-        {filterBooks.map((eachValue) => (
-          <BookCard booksDetails={eachValue} key={eachValue.id} />
-        ))}
-      </ul>
-    </div>
+        );
+      }}
+    </BookContext.Consumer>
   );
 };
 
