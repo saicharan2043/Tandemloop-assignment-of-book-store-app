@@ -1,0 +1,157 @@
+.background-container {
+  height: 100vh;
+  width: 100%;
+  background-color: #ebedec;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+}
+
+.banner-conatiner {
+  width: 85%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  flex-shrink: 0;
+}
+
+.heading-container {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+}
+
+.label-of-banner {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 25px;
+  color: #4d8f72;
+  margin-bottom: 0px;
+}
+
+.heading-of-banner {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 50px;
+  color: #323940;
+  margin-bottom: 10px;
+}
+
+.description-of-banner {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+  color: #2b2e2c;
+  margin-bottom: 30px;
+}
+
+.shop-now-btn {
+  width: 150px;
+  height: 45px;
+  background-color: #4d8f72;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 15px;
+  color: #ffffff;
+  border-width: 0px;
+  border-radius: 10px;
+}
+
+.img-of-banner {
+  width: 40%;
+  height: 520px;
+}
+
+.discount-container {
+  width: 100%;
+  height: 350px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  flex-shrink: 0;
+}
+
+.card-of-discount {
+  width: 580px;
+  height: 180px;
+  border-radius: 10px;
+  display: flex;
+  margin: 0px 15px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  overflow: hidden;
+}
+
+.img-of-discount {
+  width: 50%;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transition: transform 0.4s ease;
+}
+
+.card-of-discount:hover .img-of-discount {
+  transform: scale(1.1);
+}
+
+.text-container-of-discount {
+  width: 50%;
+  height: 100%;
+  padding: 20px;
+}
+
+.text-of-discount {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 18px;
+  color: #4d8f72;
+  margin-bottom: 1 5px;
+}
+
+.heading-of-discount {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+  color: #323940;
+  margin-bottom: 15px;
+}
+
+.discription-of-discount {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 18px;
+  color: #3f4542;
+}
+
+.books-gallery-text {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+  color: #4d8f72;
+  margin-bottom: 15px;
+  letter-spacing: 5px;
+  flex-shrink: 1;
+}
+
+.popular-books-text {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 40px;
+  color: #323940;
+  margin-top: 0px;
+  margin-bottom: 40px;
+  letter-spacing: 3px;
+}
+
+.books-ul-list {
+  width: 90%;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px;
+  margin-bottom: 20px;
+  flex-shrink: 0;
+  overflow: auto;
+}
+
+.books-ul-list::-webkit-scrollbar {
+  display: none;
+}
