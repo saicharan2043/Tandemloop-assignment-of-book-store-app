@@ -34,6 +34,16 @@
   padding-left: 15px;
   outline: none;
 }
+@media (max-width: 576px) {
+  .input {
+    width: 90%;
+    height: 30px;
+  }
+
+  .lable {
+    font-size: 12px;
+  }
+}
 
 .btn-login {
   width: 400px;
@@ -50,4 +60,10 @@
   background-color: #089949;
   margin-bottom: 0px;
   cursor: pointer;
+}
+@media (max-width: 576px) {
+  .btn-login {
+    width: 90%;
+    align-self: center;
+  }
 }

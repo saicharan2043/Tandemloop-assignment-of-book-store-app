@@ -18,6 +18,16 @@
   font-weight: bold;
 }
 
+@media (max-width: 576px) {
+  .logo-text {
+    font-size: 15px;
+  }
+
+  .navbar-container {
+    margin-bottom: 50px;
+  }
+}
+
 .input-container {
   width: 350px;
   height: 35px;
@@ -26,6 +36,12 @@
   padding: 5px 20px;
   display: flex;
   align-items: center;
+}
+
+@media (max-width: 576px) {
+  .input-container {
+    display: none;
+  }
 }
 
 .search-icon {
@@ -60,6 +76,14 @@
   cursor: pointer;
 }
 
+@media (max-width: 576px) {
+  .them-and-cart-icon {
+    width: 15px;
+    height: 15px;
+    margin: 0px 8px;
+  }
+}
+
 .container-of-cart {
   width: 15px;
   height: 15px;
@@ -76,6 +100,16 @@
   left: 96px;
 }
 
+@media (max-width: 576px) {
+  .container-of-cart {
+    left: 48px;
+    top: 4px;
+    width: 10px;
+    height: 10px;
+    font-size: 8px;
+  }
+}
+
 .log-out-btn {
   width: 90px;
   height: 40px;
@@ -90,6 +124,15 @@
   border-radius: 10px;
   margin-left: 20px;
   cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  .log-out-btn {
+    width: 50px;
+    height: 25px;
+    font-size: 10px;
+    margin-left: 10px;
+  }
 }
 
 .dark-mode-color {

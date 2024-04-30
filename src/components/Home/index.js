@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { IoSearch } from "react-icons/io5";
 import BookCard from "../BookCard";
 import NavBar from "../Navbar";
 import "./index.css";
@@ -131,6 +132,15 @@ const Home = () => {
             }`}
           >
             <NavBar changeSearchText={changeSearchText} />
+            <div className="input-container-sm">
+              <IoSearch className="search-icon-sm" />
+              <input
+                type="search"
+                placeholder="Search your book here"
+                className="search-input-sm"
+                onChange={(e) => changeSearchText(e.target.value)}
+              />
+            </div>
             <div className="banner-conatiner">
               <div className="heading-container">
                 <p className="label-of-banner">

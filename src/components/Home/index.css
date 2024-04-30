@@ -12,6 +12,52 @@
   display: none;
 }
 
+.input-container-sm {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  .input-container-sm {
+    width: 75%;
+    height: 35px;
+    background-color: #e1e3e6;
+    border-radius: 8px;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+}
+
+.search-icon-sm {
+  width: 25px;
+  height: 25px;
+  color: #1c1b1b;
+  margin-right: 10px;
+}
+
+.search-input-sm {
+  width: 100%;
+  height: 100%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 15px;
+  color: #1c1b1b;
+  outline: none;
+  border-width: 0px;
+  background-color: transparent;
+}
+
+@media (max-width: 576px) {
+  .search-icon-sm {
+    width: 20px;
+    height: 20px;
+  }
+
+  .search-input-sm {
+    font-size: 12px;
+  }
+}
+
 .banner-conatiner {
   width: 85%;
   height: 500px;
@@ -20,6 +66,15 @@
   justify-content: space-between;
   margin-bottom: 60px;
   flex-shrink: 0;
+}
+
+@media (max-width: 576px) {
+  .banner-conatiner {
+    width: 95%;
+    height: 600px;
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
 }
 
 .heading-container {
@@ -63,9 +118,40 @@
   border-radius: 10px;
 }
 
+@media (max-width: 576px) {
+  .heading-container {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .label-of-banner {
+    font-size: 18px;
+  }
+  .heading-of-banner {
+    font-size: 25px;
+  }
+
+  .description-of-banner {
+    font-size: 15px;
+  }
+
+  .shop-now-btn {
+    width: 100px;
+    height: 40px;
+    font-size: 12px;
+  }
+}
+
 .img-of-banner {
   width: 40%;
   height: 520px;
+}
+
+@media (max-width: 576px) {
+  .img-of-banner {
+    width: 90%;
+    height: 250px;
+  }
 }
 
 .discount-container {
@@ -79,6 +165,14 @@
   flex-shrink: 0;
 }
 
+@media (max-width: 576px) {
+  .discount-container {
+    flex-direction: column;
+    justify-content: center;
+    height: 300px;
+  }
+}
+
 .card-of-discount {
   width: 580px;
   height: 180px;
@@ -87,6 +181,14 @@
   margin: 0px 15px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   overflow: hidden;
+}
+
+@media (max-width: 576px) {
+  .card-of-discount {
+    width: 90%;
+    height: 120px;
+    margin: 10px 0px;
+  }
 }
 
 .img-of-discount {
@@ -107,11 +209,17 @@
   padding: 20px;
 }
 
+@media (max-width: 576px) {
+  .text-container-of-discount {
+    padding: 10px;
+  }
+}
+
 .text-of-discount {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 18px;
   color: #4d8f72;
-  margin-bottom: 1 5px;
+  margin-bottom: 15px;
 }
 
 .heading-of-discount {
@@ -125,6 +233,22 @@
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 18px;
   color: #3f4542;
+}
+
+@media (max-width: 576px) {
+  .text-of-discount {
+    font-size: 12px;
+    margin: 0px;
+  }
+
+  .heading-of-discount {
+    font-size: 12px;
+    margin-bottom: 2px;
+  }
+
+  .discription-of-discount {
+    font-size: 12px;
+  }
 }
 
 .books-gallery-text {
@@ -143,6 +267,15 @@
   margin-top: 0px;
   margin-bottom: 40px;
   letter-spacing: 3px;
+}
+
+@media (max-width: 576px) {
+  .popular-books-text {
+    font-size: 30px;
+  }
+  .books-gallery-text {
+    font-size: 15px;
+  }
 }
 
 .books-ul-list {
